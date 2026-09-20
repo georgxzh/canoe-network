@@ -2,16 +2,15 @@
 
 One-page site for Canoe — the new internet. Private by construction, AI native by default.
 
-Design notes: the palette and the signature graphic are lifted from Claude Monet's
-*Impression, Sunrise* (1872) — misty blue-grey and muted teal, with the vivid orange
-sun as the only accent. The hero canvas draws that sunrise as a rising orb over a
-faintly gridded sea, its reflection broken into short strokes.
+Design notes: a mostly white editorial layout presents the supplied image of Claude
+Monet's *Impression, Sunrise* (1872). Mist blue, pale sea green, and the muted
+orange sun inform the page's restrained accents.
 
 ## Stack
 
 - Next.js (App Router), static export (`output: 'export'`)
 - Tailwind CSS v4
-- No runtime dependencies beyond React; the hero graphic is hand-drawn on a `<canvas>`
+- No runtime dependencies beyond React; the painting is served as a local asset
 
 ## Develop
 
