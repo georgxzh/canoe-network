@@ -2,10 +2,9 @@
 
 One-page site for Canoe — the new internet. Private by construction, AI native by default.
 
-Design notes: a white technical grid, geometric typography, black type, and yellow
-accents surround the supplied image of Claude Monet's *Impression, Sunrise* (1872),
-which fades into the hero background.
-The last section leaves open space for a future team presentation.
+Design notes: Claude Monet's *Impression, Sunrise* (1872) dissolves into the hero
+and returns as a faint texture behind two short statements. Black and yellow
+typography, generous space, and an open team section keep the page spare.
 
 ## Stack
 
