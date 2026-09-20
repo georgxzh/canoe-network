@@ -110,10 +110,10 @@ export default function Home() {
       </main>
 
       <footer className="flex flex-col items-center gap-2 px-6 pb-12 text-center">
-        <p className="text-xs tracking-[0.2em] text-mist/45 uppercase">Canoe</p>
+        <p className="text-xs tracking-[0.2em] text-mist/80 uppercase">Canoe</p>
         <a
           href={`mailto:${EMAIL}`}
-          className="text-xs tracking-[0.06em] text-mist/45 transition-colors hover:text-mist"
+          className="text-xs tracking-[0.06em] text-mist/80 transition-colors hover:text-light"
         >
           {EMAIL}
         </a>
