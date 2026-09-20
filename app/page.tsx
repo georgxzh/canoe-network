@@ -7,8 +7,14 @@ export default function Home() {
     <>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Canoe, back to top">
-          CANOE<span className="wordmark-dot" aria-hidden="true" />
+          <span className="wordmark-symbol" aria-hidden="true">C<span>✳</span></span>
+          <span>Canoe</span>
         </a>
+        <nav className="site-nav" aria-label="Main navigation">
+          <a href="#privacy">Privacy</a>
+          <a href="#intelligence">Intelligence</a>
+          <a href="#team">Team</a>
+        </nav>
         <a className="header-contact" href={`mailto:${EMAIL}`}>
           Get in touch <span aria-hidden="true">↗</span>
         </a>
@@ -16,8 +22,14 @@ export default function Home() {
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
+          <div className="hero-kicker">
+            <span className="yellow-block" aria-hidden="true" />
+            <span>THE NEW INTERNET.</span>
+            <span className="hero-kicker-index">00 / 04</span>
+          </div>
+
           <div className="hero-heading">
-            <h1 id="hero-title">Canoe</h1>
+            <h1 id="hero-title">Canoe<span aria-hidden="true">.</span></h1>
             <p>The new internet.</p>
           </div>
 
@@ -29,41 +41,53 @@ export default function Home() {
                 width={1000}
                 height={777}
                 priority
-                sizes="(max-width: 700px) 90vw, (max-width: 1100px) 74vw, 820px"
+                sizes="(max-width: 700px) 92vw, (max-width: 1100px) 76vw, 850px"
               />
+              <span className="painting-corner painting-corner-top" aria-hidden="true" />
+              <span className="painting-corner painting-corner-bottom" aria-hidden="true" />
             </div>
             <figcaption>
-              <span>Claude Monet</span>
-              <span>Impression, Sunrise · 1872</span>
+              <span>FIG. 01 / CLAUDE MONET</span>
+              <span>IMPRESSION, SUNRISE · 1872</span>
             </figcaption>
           </figure>
-          <div className="hero-endmark" aria-hidden="true">01 / 03</div>
+          <a className="scroll-cue" href="#privacy" aria-label="Scroll to privacy">↓</a>
         </section>
 
         <section className="statement-section" id="privacy" aria-labelledby="privacy-title">
-          <div className="statement-meta" aria-hidden="true">01 /</div>
+          <div className="statement-meta">01 / PRIVACY</div>
           <h2 id="privacy-title">Your data never leaves <span>your hands.</span></h2>
+          <span className="statement-marker" aria-hidden="true">↗</span>
         </section>
 
-        <section className="statement-section statement-section-mist" id="intelligence" aria-labelledby="intelligence-title">
-          <div className="statement-meta" aria-hidden="true">02 /</div>
+        <section className="statement-section statement-section-dark" id="intelligence" aria-labelledby="intelligence-title">
+          <div className="statement-meta">02 / INTELLIGENCE</div>
           <h2 id="intelligence-title">Built for intelligence, <span>not for ads.</span></h2>
+          <span className="statement-marker" aria-hidden="true">↗</span>
         </section>
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
-          <div className="statement-meta" aria-hidden="true">03 /</div>
+          <div className="statement-meta">03 / CONTACT</div>
           <div className="contact-content">
             <h2 id="contact-title">VCs don’t need more.<br /><span>They need less.</span></h2>
             <a className="contact-link" href={`mailto:${EMAIL}`}>
               Get in touch <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <span className="contact-sun" aria-hidden="true" />
+          <span className="contact-orbit" aria-hidden="true" />
+        </section>
+
+        <section className="team-section" id="team" aria-labelledby="team-title">
+          <div className="statement-meta">04 / TEAM</div>
+          <div className="team-content">
+            <h2 id="team-title">Team<span aria-hidden="true">.</span></h2>
+            <div className="team-space" aria-hidden="true" />
+          </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <span>CANOE</span>
+        <span>CANOE<span className="footer-dot">.</span></span>
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
       </footer>
     </>
