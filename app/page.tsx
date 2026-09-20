@@ -41,16 +41,11 @@ export default function Home() {
                 width={1000}
                 height={777}
                 priority
-                sizes="(max-width: 700px) 92vw, (max-width: 1100px) 76vw, 850px"
+                sizes="(max-width: 700px) 180vw, (max-width: 1100px) 80vw, 980px"
               />
-              <span className="painting-corner painting-corner-top" aria-hidden="true" />
-              <span className="painting-corner painting-corner-bottom" aria-hidden="true" />
             </div>
-            <figcaption>
-              <span>FIG. 01 / CLAUDE MONET</span>
-              <span>IMPRESSION, SUNRISE · 1872</span>
-            </figcaption>
           </figure>
+          <p className="painting-credit">FIG. 01 / CLAUDE MONET · IMPRESSION, SUNRISE · 1872</p>
           <a className="scroll-cue" href="#privacy" aria-label="Scroll to privacy">↓</a>
         </section>
 
